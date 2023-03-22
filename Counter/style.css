@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20rem auto;
+  font-size: 3rem;
+}
+.counter-number {
+  padding: 0px 5rem;
+}
+.counter-decrease {
+  font-weight: normal;
+  background-color: #dfe6e9;
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+}
+.counter-increase {
+  font-weight: normal;
+  background-color: #dfe6e9;
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+}
