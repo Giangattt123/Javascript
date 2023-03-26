@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- JS đặt trong thẻ head -->
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Phùng Đức Giang";
+      }
+    </script>
+  </head>
+  <body>
+    <p id="demo">Đức Giang</p>
+    <button type="button" onclick="myFunction()">Click</button>
+    <p id="demo1"></p>
+    <script>
+      x = 10;
+      y = 12;
+      z = z + y;
+      document.getElementById("demo1").innerHTML = "This value of z is" + z;
+    </script>
+    <!-- JS cũng có thể đặt trong thẻ <body></body> => không khuyến khích bởi có thể làm cho trải nghiệm người dùng không thực sự tốt -->
+  </body>
+</html>
