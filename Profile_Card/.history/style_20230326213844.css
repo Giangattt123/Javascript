@@ -97,7 +97,6 @@ button {
 }
 button {
   background-color: #95a5a6;
-  background-color: #9b59b6;
 }
 button:hover {
   background-color: #9b59b6;
@@ -108,7 +107,4 @@ button:hover {
   border-radius: unset;
   border: unset;
   transform: unset;
-}
-.heart-icon {
-  color: red;
 }

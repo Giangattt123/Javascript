@@ -1,0 +1,132 @@
+# JavaScript Arrays
+
+An array is a special variable, which can hold more than one value:
+
+```
+const cars = ["Saab", "Volvo", "BMW"];
+console.log(typeof(cars)); // object
+```
+
+Ta cũng có thể tạo ra một mảng chưa có phần tử sau đó đưa các phần tử vào
+
+```
+const cars = [];
+cars[0]= "Saab";
+cars[1]= "Volvo";
+cars[2]= "BMW";
+```
+
+## Using the JavaScript Keyword new
+
+```
+const cars = new Array("Saab", "Volvo", "BMW");
+console.log(cars);// (3) ["Saab", "Volvo", "BMW"]
+console.log(typeof(cars)); // object
+```
+
+> Data_type của array là object
+
+## Array Elements Can Be Objects
+
+## Array Properties and Methods
+
+## Looping Array Elements
+
+Use for loop
+
+```
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruits.length;
+for(let i = 0 ; i < fLen ; i++){
+  console.log(fruits[i]);
+}
+=>  Banana
+    Orange
+    Apple
+    Mango
+```
+
+> Cũng có thể sử dụng **Array.forEach()** function:
+> Trong JavaScript, phương thức **forEach()** được sử dụng để lặp qua từng phần tử của một mảng và thực hiện một hàm được chỉ định cho mỗi phần tử. Phương thức này truyền vào một hàm callback (hàm được gọi lại), và hàm callback này sẽ được gọi một lần cho mỗi phần tử trong mảng.
+> Cú pháp của phương thức **forEach()** như sau:
+
+```
+array.forEach(function(currentValue, index, array) {
+  // code to be executed on each element
+});
+```
+
+Giải thích các tham số trên:
+
+- array: Mảng được lặp qua.
+- currentValue: Giá trị hiện tại đang được lặp qua trong mảng.
+- index: Chỉ mục (index) của giá trị hiện tại trong mảng.
+- array: Mảng được lặp qua.
+  Vì vậy để in ra các phần tử của mảng **fruits** trên ta có thể làm như sau:
+
+```
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruits.length;
+fruits.forEach(loop_element);
+function loop_element(i){
+  console.log(i);
+}
+```
+
+## Adding Array Elements
+
+The easiest way to add a new element to an array is using the **push()** method
+
+```
+const fruits = ["Banana", "Orange", "Apple"];
+fruits.push("Lemon");  // Adds a new element (Lemon) to fruits
+```
+
+> !Adding elements with high indexes can create undefined "holes" in an array
+
+## Associative Arrays
+
+If you use named indexes, JavaScript will redefine the array to an object.
+After that, some array methods and properties will produce incorrect results.
+
+```
+const person = [];
+person["firstName"] = "John";
+person["lastName"] = "Doe";
+person["age"] = 46;
+person.length;     // Will return 0
+person[0];         // Will return undefined
+```
+
+## JavaScript new Array()
+
+## How to Recognize an Array
+
+A common question is: How do I know if a variable is an array?
+The problem is that the JavaScript operator typeof returns "object"
+
+> The typeof operator returns object because a JavaScript array is an object.
+
+### Solution 1
+
+To solve this problem ECMAScript 5 (JavaScript 2009) defined a new method **Array.isArray()**:
+
+```
+let fullName = ["giang" , "linh" , "dung"];
+let object = {"fullName" : "Đức Giang" , age : 20};
+if(Array.isArray(fullName)){
+  console.log("Is Array"); // Is Array
+}
+if(Array.isArray(object)){
+  console.log("Is Array"); // Not...
+}
+```
+
+### Solution 2
+
+The **instanceof operator** returns true if an object is created by a given constructor:
+
+```
+const fruits = ["Banana", "Orange", "Apple"];
+fruits instanceof Array;
+```
