@@ -251,7 +251,7 @@ const words = sentence.split(" ");
 console.log(words); => ["This", "is", "a", "sample", "sentence"]
 ```
 
-# JavaScript Template Literals\
+# JavaScript Template Literals
 
 > Template literals allows variables in strings:
 
@@ -277,3 +277,29 @@ console.log(words); => ["This", "is", "a", "sample", "sentence"]
 > Kết quả
 
 ![image](https://live.staticflickr.com/65535/52784065112_5847d60a84_z.jpg)
+
+# Javascript Reverse Array
+
+```
+const arr = [1, 2, 3, 4, 5];
+arr.reverse();
+console.log(arr); // (5) [5, 4, 3, 2, 1]
+```
+
+# Using Math.max() - Math.min() on an Array
+
+You can use Math.max.apply to find the highest number in an array:
+
+> Syntax : Math.max.apply(null, array)
+
+```
+let arr = [1 , 3 , 2 , 4 , 6];
+console.log(Math.max.apply(null , arr)); => 6
+```
+
+> Math.max.apply(null, [1, 2, 3]) is equivalent to Math.max(1, 2, 3).
+
+Similar Math.min. apply to find the lowest number in an array:
+
+> Syntax : Math.min.apply(null, array)
+> Math.min.apply(null, [1, 2, 3]) is equivalent to Math.min(1, 2, 3).

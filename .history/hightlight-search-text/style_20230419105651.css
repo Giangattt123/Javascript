@@ -1,0 +1,40 @@
+*,
+*:before *:after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+input {
+  line-height: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+.dropdown {
+  position: relative;
+  width: 50rem;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 1.16) 0px 1px 4px;
+  margin: 2rem auto;
+}

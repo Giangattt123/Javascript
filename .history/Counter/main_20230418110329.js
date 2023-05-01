@@ -5,6 +5,7 @@ let numberValue = parseInt(counterNumber.textContent);
 minus.addEventListener("click", function () {
   if (counterNumber.textContent <= 0) return 0;
   numberValue--;
+  k;
   counterNumber.textContent = numberValue;
 });
 plus.addEventListener("click", function () {
